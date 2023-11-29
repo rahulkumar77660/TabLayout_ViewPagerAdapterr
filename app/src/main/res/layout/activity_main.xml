@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+   >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:background="#128C7E"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/whatsapp_menu"
+        style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+        android:background="#128C7E"
+        app:title="Api All data"
+
+        />
+
+</LinearLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#128C7E"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="@color/white"
+        app:tabTextColor="#DCD8D8"
+        app:tabIndicatorFullWidth="true"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabIconTint="#DCD8D8"
+
+        />
+<androidx.viewpager.widget.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewpager"
+
+
+    />
+</LinearLayout>

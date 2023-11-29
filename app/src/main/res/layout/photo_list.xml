@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/card"
+        android:layout_marginTop="10dp"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/newphoto_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Id"
+                android:textSize="15dp"
+
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/newp_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:textSize="15dp"
+                android:layout_below="@id/newphoto_id"
+
+
+                />
+
+            <TextView
+                android:id="@+id/newp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hellow world"
+                android:textSize="15dp"
+                android:layout_below="@id/newp_id"
+
+
+                />
+
+
+            <ImageView
+                android:id="@+id/newp_thubnel"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@id/newp_title"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+                />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/newp_url"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/newp_thubnel"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/engin"
+            android:layout_marginTop="-45dp"
+
+            />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

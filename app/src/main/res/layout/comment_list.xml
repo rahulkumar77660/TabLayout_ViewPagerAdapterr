@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/card"
+        android:layout_marginTop="10dp"
+
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+
+            >
+
+            <TextView
+                android:id="@+id/post_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Id"
+                android:textSize="15dp"
+
+
+
+
+                />
+
+            <TextView
+                android:id="@+id/p_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:textSize="15dp"
+                android:layout_below="@id/post_id"
+
+
+                />
+
+            <TextView
+                android:id="@+id/p_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hellow world"
+                android:textSize="15dp"
+                android:layout_below="@id/p_id"
+
+
+                />
+
+            <TextView
+                android:id="@+id/p_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:textSize="15dp"
+                android:layout_below="@id/p_name"
+
+
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
